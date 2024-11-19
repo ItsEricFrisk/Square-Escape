@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script type="module" src="./script.js" defer></script>
+    <title>Square Escape</title>
+  </head>
+  <body>
+    <main
+      class="w-screen h-screen flex flex-col justify-center items-center bg-zinc-100 relative"
+      id="main"
+    >
+      <span
+        class="text-3xl font-bold relative top-0 -left-[220px]"
+        id="levels"
+      ></span>
+      <canvas
+        id="canvas"
+        width="500"
+        height="300"
+        class="bg-white border-4 border-black"
+      ></canvas>
+      <div class="w-auto h-10">
+        <span
+          class="text-3xl font-bold relative top-0 -left-[220px]"
+          id="attempts"
+          >0</span
+        >
+      </div>
+      <div
+        class="w-[510px] h-[310px] bg-black absolute top-[0px] hidden items-center justify-center flex-col"
+        id="goalModal"
+      >
+        <h3 class="text-white text-2xl">Congratulations!</h3>
+        <p class="text-white text-lg mt-2">You made it.</p>
+        <button
+          class="text-white mt-10 border border-white px-3 py-1 rounded-sm"
+          id="restartBtn"
+        >
+          Restart
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
