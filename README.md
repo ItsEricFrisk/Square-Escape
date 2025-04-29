@@ -1,0 +1,1 @@
+Square Escape is a challenging puzzle game where you control a square and must avoid moving obstacles.
